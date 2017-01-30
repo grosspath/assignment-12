@@ -5,14 +5,17 @@
 // of strings, where each string is a customer's full name.
 
 var getFullNames = function (both) {
-  var fullName = [];
+  var fullName = '';
+  var nameString = [];
   for (var i = 0; i < both.length; i++) {
-  var nameArray = [(both[i].first) + ' ' + (both[i].last)];
-  fullName.push(nameArray);
+    var first = both[i].first;
+    var last = both[i].last;
+    fullName = first + ' ' +last;
+    nameString.push(fullName);
+    console.log (nameString)
   }
-  return fullName;
+  return nameString;
 }
-
 
 
 
